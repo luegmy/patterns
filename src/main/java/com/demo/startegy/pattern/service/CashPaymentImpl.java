@@ -1,6 +1,7 @@
 package com.demo.startegy.pattern.service;
 
 import com.demo.startegy.pattern.model.PaymentInformation;
+import com.demo.startegy.pattern.model.PaymentType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -12,6 +13,11 @@ import org.springframework.stereotype.Service;
 @Qualifier("CashPaymentImpl")
 @Primary
 public class CashPaymentImpl implements PaymentService {
+
+  @Override
+  public PaymentType getPaymentType() {
+    return PaymentType.CASH;
+  }
 
   @Override
   public void processPayment(PaymentInformation paymentInformation) {
