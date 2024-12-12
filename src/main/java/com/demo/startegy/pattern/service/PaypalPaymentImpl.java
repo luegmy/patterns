@@ -1,6 +1,7 @@
 package com.demo.startegy.pattern.service;
 
 import com.demo.startegy.pattern.model.PaymentInformation;
+import com.demo.startegy.pattern.model.PaymentType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,6 +11,11 @@ import org.springframework.stereotype.Service;
 @Service
 @Qualifier("PaypalPaymentImpl")
 public class PaypalPaymentImpl implements PaymentService {
+
+  @Override
+  public PaymentType getPaymentType() {
+    return PaymentType.PAYPAL;
+  }
 
   @Override
   public void processPayment(PaymentInformation paymentInformation) {
