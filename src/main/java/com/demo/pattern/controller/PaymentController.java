@@ -1,11 +1,8 @@
-package com.demo.startegy.pattern.controller;
+package com.demo.pattern.controller;
 
-import com.demo.startegy.pattern.context.PaymentContext;
-import com.demo.startegy.pattern.model.PaymentInformation;
-import com.demo.startegy.pattern.model.PaymentType;
-import com.demo.startegy.pattern.service.PaymentService;
+import com.demo.pattern.context.PaymentContext;
+import com.demo.pattern.model.PaymentInformation;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.demo.startegy.pattern.model;
+package com.demo.pattern.model;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

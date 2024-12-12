@@ -1,25 +1,19 @@
-package com.demo.startegy.pattern;
+package com.demo.pattern;
 
-import com.demo.startegy.pattern.context.PaymentContext;
-import com.demo.startegy.pattern.model.PaymentInformation;
-import com.demo.startegy.pattern.model.PaymentType;
-import com.demo.startegy.pattern.service.PaymentService;
-import org.junit.jupiter.api.Test;
+import com.demo.pattern.context.PaymentContext;
+import com.demo.pattern.model.PaymentInformation;
+import com.demo.pattern.model.PaymentType;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.mock.mockito.SpyBean;
-import org.springframework.test.web.servlet.MockMvc;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.atMostOnce;
 import static org.mockito.Mockito.verify;
 
 @SpringBootTest
-class StartegyPatternApplicationTests {
+class DesignPatternApplicationTests {
 
 	@SpyBean
 	private PaymentContext paymentContext;

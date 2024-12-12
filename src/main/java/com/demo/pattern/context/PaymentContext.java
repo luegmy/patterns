@@ -1,6 +1,6 @@
-package com.demo.startegy.pattern.context;
+package com.demo.pattern.context;
 
-import com.demo.startegy.pattern.model.PaymentInformation;
+import com.demo.pattern.model.PaymentInformation;
 
 public interface PaymentContext {
     void validateAndProcessPayment(PaymentInformation paymentInformation);
