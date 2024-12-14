@@ -1,7 +1,13 @@
 package com.demo.pattern.strategy;
 
+<<<<<<< HEAD:src/main/java/com/demo/pattern/strategy/PsePaymentImpl.java
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
+=======
+import com.demo.startegy.pattern.model.PaymentInformation;
+import com.demo.startegy.pattern.model.PaymentType;
+import lombok.RequiredArgsConstructor;
+>>>>>>> origin/develop:src/main/java/com/demo/startegy/pattern/service/PsePaymentImpl.java
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
