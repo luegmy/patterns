@@ -1,4 +1,4 @@
-package com.demo.pattern.model;
+package com.demo.pattern.model.strategy;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package com.demo.pattern.service;
+package com.demo.pattern.strategy;
 
-import com.demo.pattern.model.PaymentInformation;
-import com.demo.pattern.model.PaymentType;
+import com.demo.pattern.model.strategy.PaymentInformation;
+import com.demo.pattern.model.strategy.PaymentType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;

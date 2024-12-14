@@ -1,8 +1,8 @@
 package com.demo.pattern.context;
 
-import com.demo.pattern.model.PaymentInformation;
-import com.demo.pattern.model.PaymentType;
-import com.demo.pattern.service.PaymentService;
+import com.demo.pattern.model.strategy.PaymentInformation;
+import com.demo.pattern.model.strategy.PaymentType;
+import com.demo.pattern.strategy.PaymentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
