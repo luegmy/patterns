@@ -1,12 +1,8 @@
-package com.demo.startegy.pattern.context;
+package com.demo.pattern.context;
 
-import com.demo.startegy.pattern.model.PaymentInformation;
-import com.demo.startegy.pattern.model.PaymentType;
-import com.demo.startegy.pattern.service.PaymentService;
-import com.demo.startegy.pattern.service.PaypalPaymentImpl;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.demo.pattern.model.strategy.PaymentInformation;
+import com.demo.pattern.model.strategy.PaymentType;
+import com.demo.pattern.strategy.PaymentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
