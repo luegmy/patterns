@@ -2,7 +2,13 @@ package com.demo.pattern.strategy;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
+<<<<<<< HEAD:src/main/java/com/demo/pattern/strategy/PaymentContextImpl.java
 import lombok.AllArgsConstructor;
+=======
+import com.demo.pattern.strategy.PaymentService;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+>>>>>>> origin/develop:src/main/java/com/demo/pattern/context/PaymentContextImpl.java
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
