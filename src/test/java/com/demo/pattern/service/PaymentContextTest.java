@@ -1,8 +1,8 @@
 package com.demo.pattern.service;
 
-import com.demo.pattern.context.PaymentContextImpl;
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
+import com.demo.pattern.strategy.PaymentContextImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;

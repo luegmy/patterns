@@ -1,34 +1,14 @@
 package com.demo.pattern;
 
-import com.demo.pattern.context.PaymentContext;
-import com.demo.pattern.controller.OrderController;
-import com.demo.pattern.facade.OrderService;
-import com.demo.pattern.facade.OrderServiceImpl;
-import com.demo.pattern.facade.subsystem.InventoryService;
-import com.demo.pattern.facade.subsystem.PaymentService;
-import com.demo.pattern.facade.subsystem.ShippingService;
-import com.demo.pattern.model.facade.Product;
 import com.demo.pattern.model.observer.EventType;
 import com.demo.pattern.model.observer.YoutubeEvent;
-import com.demo.pattern.model.strategy.PaymentInformation;
-import com.demo.pattern.model.strategy.PaymentType;
-import com.demo.pattern.publisher.Subject;
-import com.demo.pattern.publisher.YoutubeChannel;
-import com.demo.pattern.subscriber.Observer;
-import com.demo.pattern.subscriber.YoutubeSubscriber;
+import com.demo.pattern.observer.publisher.Subject;
+import com.demo.pattern.observer.publisher.YoutubeChannel;
+import com.demo.pattern.observer.subscriber.Observer;
+import com.demo.pattern.observer.subscriber.YoutubeSubscriber;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EnumSource;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.boot.test.mock.mockito.SpyBean;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class DesignPatternApplicationTests {
