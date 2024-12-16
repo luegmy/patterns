@@ -1,4 +1,4 @@
-package com.demo.pattern.context;
+package com.demo.pattern.strategy;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 
