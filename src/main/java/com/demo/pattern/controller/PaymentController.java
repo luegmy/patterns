@@ -1,7 +1,7 @@
 package com.demo.pattern.controller;
 
-import com.demo.pattern.context.PaymentContext;
 import com.demo.pattern.model.strategy.PaymentInformation;
+import com.demo.pattern.strategy.PaymentContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

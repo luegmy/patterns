@@ -1,4 +1,4 @@
-package com.demo.pattern.publisher;
+package com.demo.pattern.observer.publisher;
 
 import com.demo.pattern.model.observer.YoutubeEvent;
 import com.demo.pattern.observer.subscriber.Observer;
