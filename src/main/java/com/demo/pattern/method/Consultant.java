@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.demo.pattern.method;
 
 import lombok.extern.slf4j.Slf4j;
@@ -28,4 +29,7 @@ public class Consultant extends StaffPayment{
     void sendPaymentCopy() {
         log.info("Sending payment copy via email.");
     }
+=======
+package com.demo.pattern.method;public class Consultant {
+>>>>>>> develop
 }
