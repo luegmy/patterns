@@ -1,4 +1,4 @@
-package com.demo.pattern.strategy;
+package com.demo.pattern.strategy.payment;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @Qualifier("PaypalPaymentImpl")
-public class PaypalPaymentImpl implements PaymentService {
+public class PaypalPaymentImpl implements Payment {
 
   @Override
   public PaymentType getPaymentType() {

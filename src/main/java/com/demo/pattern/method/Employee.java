@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.demo.pattern.method;
 
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +23,4 @@ public class Employee extends StaffPayment{
     void sendPayment() {
         log.info("Transferring payment to account.");
     }
-=======
-package com.demo.pattern.method;public class Employee {
->>>>>>> develop
 }

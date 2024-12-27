@@ -2,7 +2,7 @@ package com.demo.pattern.service;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
-import com.demo.pattern.strategy.PaymentContextImpl;
+import com.demo.pattern.strategy.payment.PurchaseServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -16,10 +16,10 @@ import static org.mockito.Mockito.*;
 
 
 @SpringBootTest
-public class PaymentContextTest {
+public class PurchaseServiceTest {
 
     @SpyBean
-    PaymentContextImpl paymentContext;
+    PurchaseServiceImpl purchaseService;
 
     @Test
     public void testPayment() {
@@ -31,9 +31,9 @@ public class PaymentContextTest {
                 .amount(new BigDecimal("200"))
                 .build();
 
-        paymentContext.validateAndProcessPayment(paymentInformation);
+        purchaseService.validateAndProcessPayment(paymentInformation);
 
-        verify(paymentContext, atMostOnce()).validateAndProcessPayment(paymentInformation);
+        verify(purchaseService, atMostOnce()).validateAndProcessPayment(paymentInformation);
     }
 
     @ParameterizedTest
@@ -44,8 +44,8 @@ public class PaymentContextTest {
                 .customerId("Test")
                 .build();
 
-        paymentContext.validateAndProcessPayment(paymentInformation);
+        purchaseService.validateAndProcessPayment(paymentInformation);
 
-        verify(paymentContext, atMostOnce()).validateAndProcessPayment(any(PaymentInformation.class));
+        verify(purchaseService, atMostOnce()).validateAndProcessPayment(any(PaymentInformation.class));
     }
 }

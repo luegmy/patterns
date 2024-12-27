@@ -1,4 +1,4 @@
-package com.demo.pattern.strategy;
+package com.demo.pattern.strategy.payment;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Qualifier("CashPaymentImpl")
 @Primary
-public class CashPaymentImpl implements PaymentService {
+public class CashPaymentImpl implements Payment {
 
   @Override
   public PaymentType getPaymentType() {
