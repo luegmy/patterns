@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.demo.pattern.method;
 
 import lombok.AllArgsConstructor;
@@ -33,7 +32,4 @@ public abstract class StaffPayment {
     void sendPaymentCopy() {
         log.info("No copy needed by default.");
     }
-=======
-package com.demo.pattern.method;public class StaffPayment {
->>>>>>> develop
 }
