@@ -1,16 +1,18 @@
 package com.demo.pattern.strategy.file;
 
-import com.demo.pattern.model.strategy.FileType;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 
-@RequiredArgsConstructor
+@AllArgsConstructor
+@Setter
 @Component
 public class FileService {
 
-    private final SaveFile saveFile;
-    private final TranslateFile translateFile;
+    private SaveFile saveFile;
+    private TranslateFile translateFile;
 
     public String saveFileAs() {
        return saveFile.saveAs();
