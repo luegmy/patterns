@@ -1,30 +1,28 @@
 package com.demo.pattern.method;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @Slf4j
 public abstract class StaffPayment {
     private double salaryAmount;
     private double deductionAmount;
 
-    public final void processPayment() {
+    public final double processPayment() {
         // call specific steps to process the payment
         getSalary();
         getDeduction();
-        sendPayment();
         notifyAccountant();
         sendPaymentCopy();
+        return sendPayment();
     }
 
     abstract void getSalary();
     abstract void getDeduction();
-    abstract void sendPayment();
+    abstract double sendPayment();
 
     final void notifyAccountant() {
         log.info("Sending notification to Accountant Department.");

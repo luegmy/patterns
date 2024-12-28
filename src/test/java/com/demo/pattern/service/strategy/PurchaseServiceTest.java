@@ -1,4 +1,4 @@
-package com.demo.pattern.service;
+package com.demo.pattern.service.strategy;
 
 import com.demo.pattern.model.strategy.PaymentInformation;
 import com.demo.pattern.model.strategy.PaymentType;
