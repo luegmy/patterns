@@ -1,10 +1,12 @@
-package com.demo.pattern.chain;
+package com.demo.pattern.chain.bank;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@AllArgsConstructor
+@Getter
+@Setter
 public class ExecutiveAccount implements Approve {
 
     private Approve next;
@@ -12,7 +14,7 @@ public class ExecutiveAccount implements Approve {
     @Override
     public void loanApplication(double amount) {
         if (amount <= 10000) log.info("Atiende ejecutivo de cuentas {}", ExecutiveAccount.class.getName());
-        else next.loanApplication(amount);
+        else if (next != null) next.loanApplication(amount);
     }
 
 

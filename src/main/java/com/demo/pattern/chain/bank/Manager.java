@@ -1,17 +1,19 @@
-package com.demo.pattern.chain;
+package com.demo.pattern.chain.bank;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@AllArgsConstructor
+@Getter
+@Setter
 public class Manager implements Approve{
     private Approve next;
 
     @Override
     public void loanApplication(double amount) {
         if (amount > 50000 && amount <= 100000) log.info("Atiende administrador {}", Manager.class.getName());
-        else next.loanApplication(amount);
+        else if (next != null) next.loanApplication(amount);
     }
 
 
