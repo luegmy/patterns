@@ -1,4 +1,4 @@
-package com.demo.pattern.service;
+package com.demo.pattern.service.facade;
 
 import com.demo.pattern.facade.OrderServiceImpl;
 import com.demo.pattern.facade.subsystem.InventoryService;
