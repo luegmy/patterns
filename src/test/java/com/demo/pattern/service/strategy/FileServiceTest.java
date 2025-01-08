@@ -2,9 +2,10 @@ package com.demo.pattern.service.strategy;
 
 import com.demo.pattern.strategy.file.*;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@SpringBootTest
 public class FileServiceTest {
 
     @Test
