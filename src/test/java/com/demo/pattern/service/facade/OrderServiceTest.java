@@ -12,8 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
+
 @SpringBootTest
 public class OrderServiceTest {
     @Mock
@@ -36,5 +36,9 @@ public class OrderServiceTest {
         boolean result = orderService.placeOrder(24);
 
         assertTrue(result);
+
+        verify(inventoryService,times(1)).isAvailable(any());
+        verify(paymentService,times(1)).makePayment();
+        verify(shippingService,times(1)).shipProduct(any());
     }
 }
