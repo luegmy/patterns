@@ -1,4 +1,10 @@
 # patterns
+## Factory Method
+#### https://refactorizando.com/patron-diseno-factory-method/
+#### https://www.javatutoriales.com/2021/12/patron-de-diseno-factory-method.html
+#### https://codeandosimple.com/design-patterns-factory-method.html
+
+------
 ## Strategy
 #### https://medium.com/somos-pragma/aplicando-el-patr%C3%B3n-strategy-con-spring-boot-c895843b989
 #### https://runnablepatterns.com/design/patterns/patron-estrategia/

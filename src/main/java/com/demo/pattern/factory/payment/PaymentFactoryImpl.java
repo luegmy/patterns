@@ -17,6 +17,5 @@ public class PaymentFactoryImpl implements PaymentFactory {
             return new PaypalPaymentImpl();
         }
         return new PsePaymentImpl();
-
     }
 }

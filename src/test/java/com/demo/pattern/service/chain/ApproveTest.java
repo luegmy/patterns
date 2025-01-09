@@ -2,25 +2,28 @@ package com.demo.pattern.service.chain;
 
 import com.demo.pattern.chain.bank.*;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 public class ApproveTest {
     @Mock
-    private Bank bankSpy;
+    private Approve approve;
+
+    @InjectMocks
+    private Bank bank;
 
 
     @Test
     void testLoanApprovedByExecutive() {
 
-        // Espiamos el objeto interno creado
-        doNothing().when(bankSpy).setNext(any(Approve.class));
+        bank.loanApplication(3000000);
 
-        bankSpy.loanApplication(30000);
-
-        verify(bankSpy, times(1)).loanApplication(30000);
+        verify(approve, times(0)).loanApplication(30000);
     }
 }
