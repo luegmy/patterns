@@ -1,8 +1,16 @@
 # patterns
+
 ## Factory Method
 #### https://refactorizando.com/patron-diseno-factory-method/
 #### https://www.javatutoriales.com/2021/12/patron-de-diseno-factory-method.html
 #### https://codeandosimple.com/design-patterns-factory-method.html
+
+-----
+## Facade
+#### https://runnablepatterns.com/design/patterns/patron-fachada/
+#### https://codeandosimple.com/design-patterns-facade.html
+## Flyweight
+#### https://www.techcrashcourse.com/2015/10/flyweight-design-pattern-in-java.html
 
 ------
 ## Strategy
@@ -17,7 +25,3 @@
 #### http://migranitodejava.blogspot.com/2011/06/chain-of-responsibility.html
 #### https://codeandosimple.com/design-patterns-chain-of-responsability.html
 
------
-## Facade
-#### https://runnablepatterns.com/design/patterns/patron-fachada/
-#### https://codeandosimple.com/design-patterns-facade.html
